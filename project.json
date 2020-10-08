@@ -1,0 +1,17 @@
+{
+  "Name": "Winform",
+  "Description": "Simple Process Project",
+  "MainWorkflow": "Main.xaml",
+  "Dependencies": {},
+  "ExcludedData": [
+    "Private:*",
+    "*password*"
+  ],
+  "ToolVersion": "2.0.1.5",
+  "ProjectVersion": "1.0.12678.27419",
+  "PackOptions": {},
+  "RuntimeOptions": {},
+  "ProjectDirectory": "C:\\Users\\o0Rock0o\\Documents\\akaBot\\Winform",
+  "ProjectFilePath": "C:\\Users\\o0Rock0o\\Documents\\akaBot\\Winform\\project.json",
+  "ScreenshotsFolder": "C:\\Users\\o0Rock0o\\Documents\\akaBot\\Winform\\.screenshots"
+}

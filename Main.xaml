@@ -1,0 +1,145 @@
+﻿<Activity mc:Ignorable="sap sap2010 sads" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="Activity1_1"
+ xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities"
+ xmlns:fca="clr-namespace:FlaUI.Core.AutomationElements;assembly=FlaUI.Core"
+ xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+ xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities"
+ xmlns:rac="clr-namespace:RCA.Activities.Core;assembly=RCA.Activities.Core"
+ xmlns:raw="clr-namespace:RCA.Activities.Windows;assembly=RCA.Activities.Windows"
+ xmlns:sads="http://schemas.microsoft.com/netfx/2010/xaml/activities/debugger"
+ xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation"
+ xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation"
+ xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib"
+ xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib"
+ xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>FlaUI.Core.AutomationElements</x:String>
+      <x:String>FlaUI.Core.AutomationElements.Infrastructure</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>FlaUI.Core</AssemblyReference>
+      <AssemblyReference>RCA.Activities.Windows</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>RCA.Activities.Core</AssemblyReference>
+      <AssemblyReference>Aka.RPA.Python</AssemblyReference>
+      <AssemblyReference>RCA.Activities.Excel</AssemblyReference>
+      <AssemblyReference>RCA.Activities.Java</AssemblyReference>
+      <AssemblyReference>RCA.Activities.Word</AssemblyReference>
+      <AssemblyReference>RCA.Activities.Browser</AssemblyReference>
+      <AssemblyReference>RCA.Activities.IE</AssemblyReference>
+      <AssemblyReference>RCA.Activities.Mail</AssemblyReference>
+      <AssemblyReference>RCA.Activities.GSuite</AssemblyReference>
+      <AssemblyReference>RCA.Activities.FTP</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="fca:AutomationElement" Name="propList" />
+      <Variable x:TypeArguments="fca:AutomationElement" Name="element" />
+      <Variable x:TypeArguments="x:String" Default="controlButton" Name="getID" />
+      <Variable x:TypeArguments="x:String" Name="getAttr" />
+    </Sequence.Variables>
+    <raw:OpenWindow AppWindow="{x:Null}" Arguments="{x:Null}" FileName="{x:Null}" TimeoutMS="{x:Null}" WorkingDirectory="{x:Null}" DisplayName="[937780746] Open Window" sap2010:WorkflowViewState.IdRef="OpenWindow_1" Selector="&lt;app FileName='%USERPROFILE%\source\repos\WpfApp1\WpfApp1\bin\Debug\netcoreapp3.1\WpfApp1.exe' ProcessName='WpfApp1' Arguments=' ' Selector='Windows' SearchDescendants='False' /&gt;&lt;ctrl Name='MainWindow' ClassName='Window' ControlType='Window' AutomationId='Form1' FrameworkId='WPF' /&gt;" UIAutomation="UIA3">
+      <raw:OpenWindow.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="ContextWindowTarget" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <raw:FindControl DelayAfter="{x:Null}" DelayBefore="{x:Null}" From="{x:Null}" TimeoutMS="{x:Null}" UseWindow="{x:Null}" ContinueOnError="True" DisplayName="[479349808] Find Control" sap2010:WorkflowViewState.IdRef="FindControl_2" OutControl="[element]" Selector="&lt;app FileName='%USERPROFILE%\source\repos\WpfApp1\WpfApp1\bin\Debug\netcoreapp3.1\WpfApp1.exe' ProcessName='WpfApp1' Arguments=' ' Selector='Windows' SearchDescendants='False' /&gt;&lt;ctrl Name='MainWindow' ClassName='Window' ControlType='Window' AutomationId='Form1' FrameworkId='WPF' /&gt;&lt;ctrl AutomationId='{{getID}}' FrameworkId='WPF' /&gt;" UIAutomation="UIA3" WaitForDisable="False" WaitForEnable="False" WaitForExist="False" WaitForVanish="False" />
+            <raw:OpenWindow AppWindow="{x:Null}" Arguments="{x:Null}" FileName="{x:Null}" TimeoutMS="{x:Null}" WorkingDirectory="{x:Null}" DisplayName="[661633886] Open Window" sap2010:WorkflowViewState.IdRef="OpenWindow_2" Selector="&lt;app FileName='%ProgramFiles(x86)%\AccessibilityInsights\1.1\AccessibilityInsights.exe' ProcessName='AccessibilityInsights' Arguments=' ' Selector='Windows' SearchDescendants='False' /&gt;&lt;ctrl Name='Accessibility Insights for Windows - Inspect - Live' ClassName='Window' ControlType='Window' AutomationId='MainWindow' FrameworkId='WPF' /&gt;" UIAutomation="UIA3">
+              <raw:OpenWindow.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="ContextWindowTarget" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                    <raw:Click ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" Element="{x:Null}" From="{x:Null}" TimeoutMS="{x:Null}" UseWindow="{x:Null}" ClickType="Click" DisplayName="[803786321] Click" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifier="None" Selector="&lt;app FileName='%ProgramFiles(x86)%\AccessibilityInsights\1.1\AccessibilityInsights.exe' ProcessName='AccessibilityInsights' Arguments=' ' Selector='Windows' SearchDescendants='False' /&gt;&lt;ctrl Name='Accessibility Insights for Windows - Inspect - Live' ClassName='Window' ControlType='Window' AutomationId='MainWindow' FrameworkId='WPF' /&gt;&lt;ctrl Name='Command bar' ClassName='NamedPane' ControlType='Custom' AutomationId='ctrlNamedCommandbar' FrameworkId='WPF' /&gt;&lt;ctrl Name='Resume UI Automation Tree: 3 of 5' ClassName='Button' ControlType='Button' AutomationId='MainWinPauseButton' FrameworkId='WPF' /&gt;&lt;ctrl Name='Play' ClassName='FabricIconControl' ControlType='Image' FrameworkId='WPF' /&gt;" UIAutomation="UIA3" WaitForDisable="False" WaitForEnable="False" WaitForExist="False" WaitForVanish="False" />
+                    <raw:Click ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" From="{x:Null}" Selector="{x:Null}" TimeoutMS="{x:Null}" UseWindow="{x:Null}" ClickType="Click" DisplayName="[156788927] Click image" Element="[element]" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifier="None" UIAutomation="UIA3" WaitForDisable="False" WaitForEnable="False" WaitForExist="False" WaitForVanish="False" />
+                    <raw:RestoreWindow ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" Element="{x:Null}" From="{x:Null}" TimeoutMS="{x:Null}" UseWindow="{x:Null}" DisplayName="[482532292] Restore Window" sap2010:WorkflowViewState.IdRef="RestoreWindow_1" Selector="&lt;app FileName='%ProgramFiles(x86)%\AccessibilityInsights\1.1\AccessibilityInsights.exe' ProcessName='AccessibilityInsights' Arguments=' ' Selector='Windows' SearchDescendants='False' /&gt;&lt;ctrl Name='Accessibility Insights for Windows - Inspect - Live' ClassName='Window' ControlType='Window' AutomationId='MainWindow' FrameworkId='WPF' /&gt;" UIAutomation="UIA3" WaitForDisable="False" WaitForEnable="False" WaitForExist="False" WaitForVanish="False" />
+                    <raw:SendHotKey Element="{x:Null}" KeyArgument="{x:Null}" Alt="False" Ctrl="False" DisplayName="[234705909] Send Hot Key" sap2010:WorkflowViewState.IdRef="SendHotKey_1" Key="F7" Shift="True" Win="False" />
+                    <raw:FindControl DelayAfter="{x:Null}" DelayBefore="{x:Null}" From="{x:Null}" TimeoutMS="{x:Null}" UseWindow="{x:Null}" ContinueOnError="True" DisplayName="[926345335] Find Control" sap2010:WorkflowViewState.IdRef="FindControl_3" OutControl="[propList]" Selector="&lt;app FileName='%ProgramFiles(x86)%\AccessibilityInsights\1.1\AccessibilityInsights.exe' ProcessName='AccessibilityInsights' Arguments=' ' Selector='Windows' SearchDescendants='False' /&gt;&lt;ctrl Name='Accessibility Insights for Windows - Inspect - Live' ClassName='Window' ControlType='Window' AutomationId='MainWindow' FrameworkId='WPF' /&gt;&lt;ctrl Name='Live inspect with ボタン &amp;apos;Accessibility Insights for Windows - 1 個の実行中ウィンドウ&amp;apos;' ClassName='LiveModeControl' ControlType='Custom' AutomationId='ctrlLiveMode' FrameworkId='WPF' /&gt;&lt;ctrl Name='Element information' ClassName='InspectTabsControl' ControlType='Custom' AutomationId='ctrlTabs' FrameworkId='WPF' /&gt;&lt;ctrl ClassName='TabControl' ControlType='Tab' AutomationId='tabControlInspect' FrameworkId='WPF' /&gt;" UIAutomation="UIA3" WaitForDisable="False" WaitForEnable="False" WaitForExist="False" WaitForVanish="False" />
+                  </Sequence>
+                </ActivityAction>
+              </raw:OpenWindow.Body>
+            </raw:OpenWindow>
+            <raw:GetProperty ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" From="{x:Null}" Selector="{x:Null}" TimeoutMS="{x:Null}" UseWindow="{x:Null}" DisplayName="[002102317] Get Property" Element="[element]" sap2010:WorkflowViewState.IdRef="GetProperty_1" PropertyName="AutomationId" UIAutomation="UIA3" Value="[getAttr]" WaitForDisable="False" WaitForEnable="False" WaitForExist="False" WaitForVanish="False" />
+            <rac:LogMessage DisplayName="[570056703] Log Message" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Attrb :&quot; + getAttr]" />
+          </Sequence>
+        </ActivityAction>
+      </raw:OpenWindow.Body>
+    </raw:OpenWindow>
+    <sads:DebugSymbol.Symbol>dzRDOlxVc2Vyc1xvMFJvY2swb1xEb2N1bWVudHNcYWthQm90XFdpbmZvcm1cTWFpbi54YW1sHUYDbA4CAQFKNEpDAgECTQVqFgIBA03iAU2LBAIBI1MLZxYCAQRUDVTkBQIBHlUNZB4CAQ5lDWW7AwIBCGYNZqsBAgEFVJMCVPUEAgEiVJUBVJsBAgEhVP4BVIkCAgEfVeoBVcgEAgEdWxNhHgIBD2XVAmXgAgIBDGXjAWXuAQIBCmWsAmW6AgIBCWaHAWaoAQIBBlwVXOwIAgEbXRVdrQMCARheFV7uBQIBFl8VX+IBAgEVYBVgqgkCARBcrQJc/QcCARxd9gFdgQICARleoQJe/wQCARdgnAJguwgCARRgnQFgowECARNghgJgkgICARE=</sads:DebugSymbol.Symbol>
+  </Sequence>
+  <sap2010:WorkflowViewState.ViewStateManager>
+    <sap2010:ViewStateManager>
+      <sap2010:ViewStateData Id="FindControl_2" sap:VirtualizedContainerService.HintSize="414,93" />
+      <sap2010:ViewStateData Id="Click_2" sap:VirtualizedContainerService.HintSize="314,68" />
+      <sap2010:ViewStateData Id="Click_1" sap:VirtualizedContainerService.HintSize="314,68" />
+      <sap2010:ViewStateData Id="RestoreWindow_1" sap:VirtualizedContainerService.HintSize="314,68" />
+      <sap2010:ViewStateData Id="SendHotKey_1" sap:VirtualizedContainerService.HintSize="314,22" />
+      <sap2010:ViewStateData Id="FindControl_3" sap:VirtualizedContainerService.HintSize="314,93" />
+      <sap2010:ViewStateData Id="Sequence_3" sap:VirtualizedContainerService.HintSize="336,603">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData Id="OpenWindow_2" sap:VirtualizedContainerService.HintSize="414,711" />
+      <sap2010:ViewStateData Id="GetProperty_1" sap:VirtualizedContainerService.HintSize="414,68" />
+      <sap2010:ViewStateData Id="LogMessage_1" sap:VirtualizedContainerService.HintSize="414,91" />
+      <sap2010:ViewStateData Id="Sequence_2" sap:VirtualizedContainerService.HintSize="436,1207">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData Id="OpenWindow_1" sap:VirtualizedContainerService.HintSize="450,1315" />
+      <sap2010:ViewStateData Id="Sequence_1" sap:VirtualizedContainerService.HintSize="472,1439">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData Id="Activity1_1" sap:VirtualizedContainerService.HintSize="512,1411" />
+    </sap2010:ViewStateManager>
+  </sap2010:WorkflowViewState.ViewStateManager>
+</Activity>
